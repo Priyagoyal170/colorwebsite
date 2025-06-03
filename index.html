@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ColorPop Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body class="light">
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">🛒 ColorPop</div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><button class="filter-btn" data-category="all">All</button></li>
+        <li><button class="filter-btn" data-category="clothing">Clothing</button></li>
+        <li><button class="filter-btn" data-category="gadgets">Gadgets</button></li>
+        <li><button class="filter-btn" data-category="accessories">Accessories</button></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button id="toggle-dark">🌓</button>
+      <button id="cart-toggle">🛍️ <span id="cart-count">0</span></button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Welcome to ColorPop</h1>
+    <p>Find your favorite products in vibrant style.</p>
+  </section>
+
+  <!-- Product Grid -->
+  <main class="product-grid" id="product-grid">
+    <!-- Products will be injected dynamically -->
+  </main>
+
+  <!-- Cart Sidebar -->
+  <aside class="cart-sidebar" id="cart-sidebar">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <div class="cart-footer">
+      <p>Total: $<span id="cart-total">0.00</span></p>
+      <button id="checkout">Checkout</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
