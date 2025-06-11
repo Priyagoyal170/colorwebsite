@@ -6,12 +6,19 @@
   <title>ColorPop Shop</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="style2.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
 </head>
 <body class="light">
   <!-- Header -->
   <header class="header">
     <div class="logo">🛒 ColorPop</div>
-    <nav class="navbar">
+  
+    <!-- Hamburger icon -->
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  
+    <!-- Nav Menu -->
+    <nav class="navbar" id="navbar">
       <ul class="nav-links">
         <li><button class="filter-btn" data-category="all">All</button></li>
         <li><button class="filter-btn" data-category="clothing">Clothing</button></li>
@@ -19,12 +26,13 @@
         <li><button class="filter-btn" data-category="accessories">Accessories</button></li>
       </ul>
     </nav>
+  
     <div class="header-actions">
       <button id="toggle-dark">🌓</button>
       <button id="cart-toggle">🛍️ <span id="cart-count">0</span></button>
     </div>
   </header>
-
+  
   <!-- Hero -->
   <section class="hero">
     <h1>Welcome to ColorPop</h1>
@@ -46,6 +54,48 @@
     </div>
   </aside>
 
+  <footer>
+    <div class="footer-inner">
+      <div class="top">
+        <div>
+          <h2>Are you ready?</h2>
+          <h3>Let's make a difference!</h3>
+        </div>
+        <button>Get started</button>
+      </div>
+      <div class="bottom">
+        <div class="logo-content">
+          <img class="logo" src="logo.svg" alt="Logo" />
+          <div class="socials">
+            <a class="fa-brands fa-x-twitter"></a>
+            <a class="fa-brands fa-x-facebook"></a>
+            <a class="fa-brands fa-x-linkedin"></a>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><h4>Company</h4></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+          <ul>
+            <li><h4>Support</h4></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+          <ul>
+            <li><h4>Legal</h4></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  
   <script src="script.js"></script>
 </body>
 </html>
